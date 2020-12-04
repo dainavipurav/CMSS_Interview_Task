@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/material_dimen_small_ldpi"
+    tools:context=".fragments.LeavesFragment">
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButtonLeavesHolidayCalendar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
+        android:padding="@dimen/material_dimen_ldpi"
+        android:layout_marginBottom="@dimen/material_dimen_ldpi"
+        android:src="@drawable/ic_calendar"
+        android:tint="@color/white"
+        app:backgroundTint="@android:color/holo_blue_dark"
+        app:layout_constraintBottom_toTopOf="@id/floatingActionButtonLeavesApplyLeave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        android:layout_marginEnd="@dimen/material_dimen_mdpi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1"
+        app:tint="@color/white" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButtonLeavesApplyLeave"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:src="@drawable/ic_add"
+        android:tint="@color/white"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        android:layout_marginEnd="@dimen/material_dimen_mdpi"
+        android:layout_marginBottom="@dimen/material_dimen_ldpi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:tint="@color/white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

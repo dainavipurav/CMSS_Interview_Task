@@ -1,0 +1,41 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--Constant Bottom Navigation-->
+    <style name="AppTheme.BottomNavigation" parent="Widget.Design.BottomNavigationView">
+        <item name="cornerRadius">@dimen/material_dimen_mdpi</item>
+        <item name="circleRadius">@dimen/material_dimen_mdpi</item>
+        <item name="shapeAppearance">@dimen/material_dimen_mdpi</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="elevation">@dimen/material_dimen_small_ldpi</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="itemIconTint">@drawable/bottom_navigation_color</item>
+        <item name="itemTextColor">@drawable/bottom_navigation_color</item>
+    </style>
+
+    <style name="AppTheme.NavigationView" parent="Widget.Design.NavigationView">
+        <item name="itemTextAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="itemTextColor">@color/white</item>
+        <item name="itemIconTint">@color/white</item>
+    </style>
+
+    <style name="TabLayoutStyle" parent="Widget.MaterialComponents.TabLayout">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="background">@drawable/tab_indicator</item>
+    </style>
+
+    <style name="TabLayoutIndicatorStyle" parent="Widget.MaterialComponents.TabLayout">
+        <item name="background">@drawable/tab_indicator</item>
+    </style>
+
+
+</resources>

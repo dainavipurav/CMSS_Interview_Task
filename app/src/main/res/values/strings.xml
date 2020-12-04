@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">CMSS Interview Task</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_string_favorites">Favorites</string>
+    <string name="text_string_team">Team</string>
+    <string name="text_string_approvals">Approvals</string>
+    <string name="text_string_notifications">Notifications</string>
+    <string name="text_string_search">Search</string>
+    <string name="text_string_share">Share</string>
+    <string name="text_string_open">Open</string>
+    <string name="text_string_close">Close</string>
+    <string name="text_string_announcements">ANNOUNCEMENTS</string>
+    <string name="text_string_attendance">ATTENDANCE</string>
+    <string name="text_string_leaves">LEAVES</string>
 </resources>
