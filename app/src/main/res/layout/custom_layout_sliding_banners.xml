@@ -3,18 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/constraintLayoutCustomLayoutSlidingBanners"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@android:color/darker_gray">
 
     <ImageView
+        android:id="@+id/imageViewCustomLayoutSlidingBanners"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="@dimen/material_dimen_mdpi"
+        android:src="@mipmap/ic_launcher"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="9:4"
-        android:layout_margin="@dimen/material_dimen_mdpi"
-        android:id="@+id/imageViewCustomLayoutSlidingBanners"
-        android:src="@mipmap/ic_launcher"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

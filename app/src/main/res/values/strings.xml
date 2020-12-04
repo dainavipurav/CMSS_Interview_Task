@@ -13,4 +13,17 @@
     <string name="text_string_announcements">ANNOUNCEMENTS</string>
     <string name="text_string_attendance">ATTENDANCE</string>
     <string name="text_string_leaves">LEAVES</string>
+    <string name="text_string_in_process">In-Process</string>
+    <string name="text_string_could_not_sign_in">Could Not Sign In</string>
+    <string name="text_string_rejected">Rejected</string>
+    <string name="text_string_leave_without_pay">Leave Without Pay</string>
+    <string name="text_string_paid_leave">Paid Leave</string>
+    <string name="text_string_approved">Approved</string>
+    <string name="text_string_late_muster">Late Muster</string>
+    <string name="text_string_seak_leave">Seak Leave</string>
+    <string name="text_string_go">Go</string>
+    <string name="text_string_absent">Absent</string>
+    <string name="text_string_present">Present</string>
+    <string name="text_string_weekly_off">Weekly Off</string>
+    <string name="text_string_working">Working</string>
 </resources>
