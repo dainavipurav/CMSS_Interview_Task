@@ -16,22 +16,25 @@ import com.android.cmssinterviewtask.models.SlidingBannersModel
 import com.google.android.material.tabs.TabLayout
 
 
-class FavoritesFragment : Fragment(R.layout.fragment_favorites){
-    private lateinit var mConstraintLayoutCustomLayoutAnnouncements : ConstraintLayout
-    private lateinit var mTextViewCustomLayoutAnnouncements : TextView
-    private lateinit var mRecyclerViewCustomLayoutAnnouncements : RecyclerView
-    private lateinit var mConstraintLayoutCustomLayoutTabs : ConstraintLayout
-    private lateinit var mTabLayoutCustomLayoutTabs : TabLayout
-    private lateinit var mViewpagerCustomLayoutTabs : ViewPager
-    private lateinit var mSlidingBannerRecyclerAdapter : SlidingBannerRecyclerAdapter
-    private var mSlidingBannersModelList : ArrayList<SlidingBannersModel> = ArrayList()
+class FavoritesFragment : Fragment(R.layout.fragment_favorites) {
+    private lateinit var mConstraintLayoutCustomLayoutAnnouncements: ConstraintLayout
+    private lateinit var mTextViewCustomLayoutAnnouncements: TextView
+    private lateinit var mRecyclerViewCustomLayoutAnnouncements: RecyclerView
+    private lateinit var mConstraintLayoutCustomLayoutTabs: ConstraintLayout
+    private lateinit var mTabLayoutCustomLayoutTabs: TabLayout
+    private lateinit var mViewpagerCustomLayoutTabs: ViewPager
+    private lateinit var mSlidingBannerRecyclerAdapter: SlidingBannerRecyclerAdapter
+    private var mSlidingBannersModelList: ArrayList<SlidingBannersModel> = ArrayList()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        mConstraintLayoutCustomLayoutAnnouncements = view.findViewById(R.id.constraintLayoutCustomLayoutAnnouncements)
-        mTextViewCustomLayoutAnnouncements = view.findViewById(R.id.textViewCustomLayoutAnnouncements)
-        mRecyclerViewCustomLayoutAnnouncements = view.findViewById(R.id.recyclerViewCustomLayoutAnnouncements)
-        mConstraintLayoutCustomLayoutTabs= view.findViewById(R.id.constraintLayoutCustomLayoutTabs)
+        mConstraintLayoutCustomLayoutAnnouncements =
+            view.findViewById(R.id.constraintLayoutCustomLayoutAnnouncements)
+        mTextViewCustomLayoutAnnouncements =
+            view.findViewById(R.id.textViewCustomLayoutAnnouncements)
+        mRecyclerViewCustomLayoutAnnouncements =
+            view.findViewById(R.id.recyclerViewCustomLayoutAnnouncements)
+        mConstraintLayoutCustomLayoutTabs = view.findViewById(R.id.constraintLayoutCustomLayoutTabs)
         mTabLayoutCustomLayoutTabs = view.findViewById(R.id.tabLayoutCustomLayoutTabs)
         mViewpagerCustomLayoutTabs = view.findViewById(R.id.viewpagerCustomLayoutTabs)
 
@@ -52,8 +55,8 @@ class FavoritesFragment : Fragment(R.layout.fragment_favorites){
         }
     }
 
-    private fun setUpViewPager(mViewPager: ViewPager){
-        val mAdapter : Adapter = Adapter(childFragmentManager)
+    private fun setUpViewPager(mViewPager: ViewPager) {
+        val mAdapter: Adapter = Adapter(childFragmentManager)
         mAdapter.addFragment(LeavesFragment(), getString(R.string.text_string_leaves))
         mAdapter.addFragment(AttendanceFragment(), getString(R.string.text_string_attendance))
 
@@ -63,8 +66,8 @@ class FavoritesFragment : Fragment(R.layout.fragment_favorites){
 
     class Adapter(mFragmentManager: FragmentManager) : FragmentPagerAdapter(mFragmentManager) {
 
-        var mFragmentList : ArrayList<Fragment> = ArrayList()
-        var mFragmentTitleList : ArrayList<String> = ArrayList()
+        var mFragmentList: ArrayList<Fragment> = ArrayList()
+        var mFragmentTitleList: ArrayList<String> = ArrayList()
 
         override fun getCount(): Int {
             return mFragmentList.size
@@ -74,7 +77,7 @@ class FavoritesFragment : Fragment(R.layout.fragment_favorites){
             return mFragmentList.get(position)
         }
 
-        fun addFragment(mFragment: Fragment, mTitle: String){
+        fun addFragment(mFragment: Fragment, mTitle: String) {
             mFragmentList.add(mFragment)
             mFragmentTitleList.add(mTitle)
         }

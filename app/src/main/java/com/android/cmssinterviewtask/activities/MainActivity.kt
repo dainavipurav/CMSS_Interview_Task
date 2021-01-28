@@ -99,7 +99,7 @@ class MainActivity : AppCompatActivity(), AppBarConfiguration.OnNavigateUpListen
 
         mDrawerNavigationViewMain.setNavigationItemSelectedListener {
             Toast.makeText(this@MainActivity, "You Clicked ${it.title}", Toast.LENGTH_SHORT).show()
-
+            mDrawerLayoutMain.closeDrawer(mDrawerNavigationViewMain)
             true
         }
     }
@@ -112,7 +112,6 @@ class MainActivity : AppCompatActivity(), AppBarConfiguration.OnNavigateUpListen
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         Toast.makeText(this@MainActivity, "You Clicked ${item.title}", Toast.LENGTH_SHORT).show()
-        mDrawerLayoutMain.closeDrawer(mDrawerNavigationViewMain)
         return true
     }
 
@@ -122,10 +121,9 @@ class MainActivity : AppCompatActivity(), AppBarConfiguration.OnNavigateUpListen
     }
 
     override fun onBackPressed() {
-        if (mDrawerLayoutMain.isDrawerOpen(GravityCompat.START)){
+        if (mDrawerLayoutMain.isDrawerOpen(GravityCompat.START)) {
             mDrawerLayoutMain.closeDrawer(GravityCompat.START)
-        }
-        else {
+        } else {
             super.onBackPressed()
         }
     }
